@@ -67,7 +67,7 @@ export default function Navbar() {
           <div
             className="absolute inset-0 pointer-events-none opacity-40 mix-blend-multiply"
             style={{
-              backgroundImage: `url('https://www.transparenttextures.com/patterns/crumpled-paper.png')`,
+              backgroundImage: `url('https://www.transparenttextures.com/patterns/crumpled-paper.webp')`,
               backgroundSize: "300px auto",
             }}
           />
@@ -258,47 +258,55 @@ export default function Navbar() {
             <div className="flex flex-col space-y-4 text-center text-[#2D2424] font-bold">
               <Link
                 href="/Products"
+                onClick={() => setIsMobileMenuOpen(false)}
                 className="hover:text-yellow-600 transition-colors"
               >
                 Products
               </Link>
               <Link
                 href="/Services"
+                onClick={() => setIsMobileMenuOpen(false)}
                 className="hover:text-yellow-600 transition-colors"
               >
                 Services
               </Link>
               <Link
-                href="#"
+                href="/Brands"
+                onClick={() => setIsMobileMenuOpen(false)}
                 className="hover:text-yellow-600 transition-colors"
               >
                 Brands
               </Link>
               <Link
-                href="#"
+                href="/Catalog"
+                onClick={() => setIsMobileMenuOpen(false)}
                 className="hover:text-yellow-600 transition-colors"
               >
                 Catalog
               </Link>
               <Link
-                href="#"
+                href="/Pricing"
+                onClick={() => setIsMobileMenuOpen(false)}
                 className="hover:text-yellow-600 transition-colors"
               >
                 Pricing
               </Link>
               <hr className="border-black opacity-20" />
               <Link
-                href="#"
+                href="/Contact"
+                onClick={() => setIsMobileMenuOpen(false)}
                 className="hover:text-yellow-600 transition-colors"
               >
                 Submit Request
               </Link>
-              <Button
-                variant="primary"
-                className="w-full justify-center border-2 border-black bg-[#F4D03F] hover:bg-[#eac124]"
-              >
-                Contact Us
-              </Button>
+              <Link href="/Contact" onClick={() => setIsMobileMenuOpen(false)}>
+                <Button
+                  variant="primary"
+                  className="w-full justify-center border-2 border-black bg-[#F4D03F] hover:bg-[#eac124]"
+                >
+                  Contact Us
+                </Button>
+              </Link>
             </div>
           </div>
         )}

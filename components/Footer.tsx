@@ -54,7 +54,7 @@ export default function TipackFooter() {
       <div
         className="absolute inset-0 pointer-events-none mix-blend-overlay opacity-60 z-0"
         style={{
-          backgroundImage: `url('https://www.transparenttextures.com/patterns/crumpled-paper.png')`,
+          backgroundImage: `url('https://www.transparenttextures.com/patterns/crumpled-paper.webp')`,
           backgroundSize: "300px",
         }}
       />

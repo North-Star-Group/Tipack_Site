@@ -78,14 +78,14 @@ export default function BrandsPage() {
       <div
         className="fixed inset-0 pointer-events-none opacity-40 mix-blend-multiply z-0"
         style={{
-          backgroundImage: `url('https://www.transparenttextures.com/patterns/crumpled-paper.png')`,
+          backgroundImage: `url('https://www.transparenttextures.com/patterns/crumpled-paper.webp')`,
           backgroundSize: "300px auto",
         }}
       />
 
       <div className="relative z-10">
         {/* --- HERO SECTION --- */}
-        <div className="max-w-7xl mx-auto px-4 md:px-8 mb-20">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 mb-20 flex flex-col items-center text-center md:items-start md:text-left">
           <div className="inline-block border-2 border-black px-4 py-1 font-mono text-sm font-bold mb-4 bg-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
             CLIENT_ROSTER_V2.PDF
           </div>

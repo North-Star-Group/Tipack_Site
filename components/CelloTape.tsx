@@ -95,7 +95,7 @@ export default function CelloTape() {
             <div
               className="absolute inset-0 pointer-events-none mix-blend-overlay opacity-60"
               style={{
-                backgroundImage: `linear-gradient(to bottom, rgba(255,255,255,0.5), transparent), url('https://www.transparenttextures.com/patterns/crumpled-paper.png')`,
+                backgroundImage: `linear-gradient(to bottom, rgba(255,255,255,0.5), transparent), url('https://www.transparenttextures.com/patterns/crumpled-paper.webp')`,
                 backgroundSize: "auto 100%",
               }}
             />

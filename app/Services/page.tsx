@@ -43,15 +43,15 @@ export default function ServicesPage() {
       <div
         className="fixed inset-0 pointer-events-none opacity-40 mix-blend-multiply z-0"
         style={{
-          backgroundImage: `url('https://www.transparenttextures.com/patterns/crumpled-paper.png')`,
+          backgroundImage: `url('https://www.transparenttextures.com/patterns/crumpled-paper.webp')`,
           backgroundSize: "300px auto",
         }}
       />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8">
         {/* --- HERO SECTION --- */}
-        <div className="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
-          <div>
+        <div className="flex flex-col md:flex-row items-center md:items-end justify-between mb-16 gap-6 text-center md:text-left">
+          <div className="flex flex-col items-center md:items-start">
             <div className="inline-block bg-black text-white px-3 py-1 font-bold text-sm mb-2 transform rotate-1">
               OPERATIONS DEPT.
             </div>
@@ -61,7 +61,7 @@ export default function ServicesPage() {
                 Solutions
               </span>
             </h1>
-            <p className="mt-6 text-lg font-medium max-w-md border-l-4 border-[#F4D03F] pl-4">
+            <p className="mt-6 text-lg font-medium max-w-md border-l-0 border-[#F4D03F] px-4 md:border-l-4 md:pl-4 md:px-0">
               We don't just sell boxes. We design, print, and ship the chaos.
               <br />
               Full-stack packaging infrastructure.
@@ -69,7 +69,7 @@ export default function ServicesPage() {
           </div>
 
           {/* Navigation Toolbar (Styled like your filter bar) */}
-          <div className="w-full md:w-auto bg-white border-2 border-black p-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] flex flex-wrap gap-2">
+          <div className="w-full md:w-auto bg-white border-2 border-black p-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] flex flex-wrap gap-2 justify-center md:justify-start">
             <button
               onClick={() => handleScrollTo("print")}
               className={`flex items-center gap-2 px-4 py-2 border-2 border-black font-bold transition-all shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-y-0.5 hover:shadow-none ${activeTab === "print" ? "bg-[#F4D03F]" : "bg-white hover:bg-gray-50"}`}

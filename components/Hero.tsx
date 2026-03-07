@@ -133,38 +133,38 @@ export default function Hero() {
         >
           {[
             {
-              src: "/images/big_box.png",
+              src: "/images/big_box.webp",
               alt: "Heavy Duty Corrugated Boxes",
               bgColor: "#d5ffb0ff",
               title: "Heavy Duty Corrugated Boxes",
             },
             {
-              src: "/images/packet.png",
+              src: "/images/packet.webp",
               alt: "Zip Lock Pouch",
               bgColor: "#fcb5b5ff",
               zoom: 2.0,
               title: "Zip Lock Pouch",
             },
             {
-              src: "/images/yellow-box.png",
+              src: "/images/yellow-box.webp",
               alt: "Regular Boxes",
               bgColor: "#d2d0ffff",
               title: "Regular Boxes",
             },
             {
-              src: "/images/Food_box.png",
+              src: "/images/Food_box.webp",
               alt: "Food Packaging Boxes",
               bgColor: "#fffc9cff",
               title: "Food Packaging Boxes",
             },
             {
-              src: "/images/Layered_boxes.png",
+              src: "/images/Layered_boxes.webp",
               alt: "Layered Boxes",
               bgColor: "#ffd0edff",
               title: "Layered Boxes",
             },
             {
-              src: "/images/wardrobe_box.png",
+              src: "/images/wardrobe_box.webp",
               alt: "Wardrobe Box",
               bgColor: "#ffdfb0ff",
               title: "Wardrobe Box",

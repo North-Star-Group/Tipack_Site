@@ -18,7 +18,7 @@ export default function PricingSection() {
       <div
         className="fixed inset-0 pointer-events-none opacity-40 mix-blend-multiply z-0"
         style={{
-          backgroundImage: `url('https://www.transparenttextures.com/patterns/crumpled-paper.png')`,
+          backgroundImage: `url('https://www.transparenttextures.com/patterns/crumpled-paper.webp')`,
           backgroundSize: "300px auto",
         }}
       />

@@ -22,7 +22,7 @@ const INVENTORY = [
     price: 3.5,
     stock: "High",
     sku: "882-A",
-    image: "/images/heavy_duty_cube.png",
+    image: "/images/heavy_duty_cube.webp",
   },
   {
     id: "BX-104",
@@ -31,7 +31,7 @@ const INVENTORY = [
     price: 1.25,
     stock: "Low",
     sku: "882-B",
-    image: "/images/Layered_boxes.png",
+    image: "/images/Layered_boxes.webp",
   },
   {
     id: "ML-202",
@@ -40,7 +40,7 @@ const INVENTORY = [
     price: 0.45,
     stock: "High",
     sku: "991-X",
-    image: "/images/packet.png",
+    image: "/images/packet.webp",
   },
   {
     id: "ML-205",
@@ -49,7 +49,7 @@ const INVENTORY = [
     price: 0.85,
     stock: "Out",
     sku: "991-Y",
-    image: "/images/Food_box.png",
+    image: "/images/Food_box.webp",
   },
   {
     id: "TP-301",
@@ -58,7 +58,7 @@ const INVENTORY = [
     price: 4.5,
     stock: "High",
     sku: "772-T",
-    image: "/images/yellow-box.png",
+    image: "/images/yellow-box.webp",
   },
   {
     id: "TP-305",
@@ -67,7 +67,7 @@ const INVENTORY = [
     price: 9.0,
     stock: "Med",
     sku: "772-L",
-    image: "/images/wardrobe_box.png",
+    image: "/images/wardrobe_box.webp",
   },
   {
     id: "BX-999",
@@ -76,7 +76,7 @@ const INVENTORY = [
     price: 12.0,
     stock: "Med",
     sku: "882-Z",
-    image: "/images/big_box.png",
+    image: "/images/big_box.webp",
   },
   {
     id: "FL-001",
@@ -85,7 +85,7 @@ const INVENTORY = [
     price: 15.0,
     stock: "High",
     sku: "661-P",
-    image: "/images/Layered_boxes.png",
+    image: "/images/Layered_boxes.webp",
   },
 ];
 
@@ -117,7 +117,7 @@ export default function CatalogSection() {
       <div
         className="fixed inset-0 pointer-events-none opacity-40 mix-blend-multiply z-0"
         style={{
-          backgroundImage: `url('https://www.transparenttextures.com/patterns/crumpled-paper.png')`,
+          backgroundImage: `url('https://www.transparenttextures.com/patterns/crumpled-paper.webp')`,
           backgroundSize: "300px auto",
         }}
       />
@@ -125,8 +125,8 @@ export default function CatalogSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8">
         {/* --- HEADER --- */}
         <div className="mb-12 border-b-4 border-black pb-8">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
-            <div>
+          <div className="flex flex-col md:flex-row items-center md:items-end justify-between gap-6 text-center md:text-left">
+            <div className="flex flex-col items-center md:items-start">
               <div className="bg-black text-white inline-block px-2 py-1 mb-2 font-mono text-xs font-bold uppercase tracking-widest">
                 System: Online // Database: V.2.4
               </div>
@@ -136,7 +136,7 @@ export default function CatalogSection() {
             </div>
 
             {/* Search Input - Industrial Style */}
-            <div className="w-full md:w-auto flex-1 max-w-md">
+            <div className="w-full md:w-auto flex-1 max-w-md text-left mt-6 md:mt-0">
               <label className="block text-xs font-bold uppercase mb-1 ml-1">
                 Search SKU or Name
               </label>
@@ -181,11 +181,10 @@ export default function CatalogSection() {
                       <button
                         key={cat}
                         onClick={() => setActiveCategory(cat)}
-                        className={`w-full text-left px-3 py-2 font-bold uppercase border-2 transition-all flex justify-between items-center ${
-                          activeCategory === cat
+                        className={`w-full text-left px-3 py-2 font-bold uppercase border-2 transition-all flex justify-between items-center ${activeCategory === cat
                             ? "bg-[#F4D03F] border-black text-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] translate-x-1"
                             : "bg-transparent border-transparent text-gray-400 hover:border-gray-200 hover:text-black"
-                        }`}
+                          }`}
                       >
                         {cat}
                         {activeCategory === cat && <Check size={16} />}

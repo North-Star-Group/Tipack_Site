@@ -38,16 +38,16 @@ export default function ContactSection() {
       <div
         className="fixed inset-0 pointer-events-none opacity-40 mix-blend-multiply z-0"
         style={{
-          backgroundImage: `url('https://www.transparenttextures.com/patterns/crumpled-paper.png')`,
+          backgroundImage: `url('https://www.transparenttextures.com/patterns/crumpled-paper.webp')`,
           backgroundSize: "300px auto",
         }}
       />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8">
         {/* --- HEADER --- */}
-        <div className="mb-16 flex flex-col md:flex-row items-end justify-between gap-8">
-          <div>
-            <div className="flex items-center gap-2 mb-2">
+        <div className="mb-16 flex flex-col md:flex-row items-center md:items-end justify-between gap-8 text-center md:text-left">
+          <div className="flex flex-col items-center md:items-start">
+            <div className="flex items-center justify-center md:justify-start gap-2 mb-2">
               <Radio className="animate-pulse text-red-600" size={20} />
               <span className="font-mono text-sm font-bold uppercase tracking-widest text-red-600">
                 Live Feed // Channel 4
@@ -58,7 +58,7 @@ export default function ContactSection() {
             </h1>
           </div>
 
-          <div className="bg-black text-white p-4 max-w-sm border-l-4 border-[#F4D03F] shadow-[8px_8px_0px_0px_rgba(0,0,0,0.2)]">
+          <div className="bg-black text-white p-4 max-w-sm border-l-4 border-[#F4D03F] shadow-[8px_8px_0px_0px_rgba(0,0,0,0.2)] text-left w-full md:w-auto mt-6 md:mt-0">
             <p className="font-mono text-xs uppercase leading-relaxed">
               <strong className="text-[#F4D03F]">NOTICE:</strong> Due to high
               volume of orders, our support team is currently prioritizing

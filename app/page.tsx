@@ -20,7 +20,7 @@ const PRODUCTS = [
   {
     id: 1,
     title: "Heavy Duty Corrugated Boxes",
-    image: "/images/big_box.png",
+    image: "/images/big_box.webp",
     description:
       "Built for endurance. Safely transport heavy and bulky items without breaking a sweat.",
     icon: Package,
@@ -29,7 +29,7 @@ const PRODUCTS = [
   {
     id: 2,
     title: "Zip Lock Pouch",
-    image: "/images/packet.png",
+    image: "/images/packet.webp",
     description:
       "Perfect seal. Keep your contents fresh and secure with our premium zip pouches.",
     icon: ShieldCheck,
@@ -38,7 +38,7 @@ const PRODUCTS = [
   {
     id: 4,
     title: "Food Packaging Boxes",
-    image: "/images/Food_box.png",
+    image: "/images/Food_box.webp",
     description:
       "Food-safe and insulated. Maintain the quality and taste of your edibles.",
     icon: Leaf,
@@ -47,7 +47,7 @@ const PRODUCTS = [
   {
     id: 5,
     title: "Layered Boxes",
-    image: "/images/Layered_boxes.png",
+    image: "/images/Layered_boxes.webp",
     description:
       "Multi-level protection. Ideal for separating and securing delicate individual components.",
     icon: Package,
@@ -56,7 +56,7 @@ const PRODUCTS = [
   {
     id: 6,
     title: "Heavy Duty Cube",
-    image: "/images/heavy_duty_cube.png",
+    image: "/images/heavy_duty_cube.webp",
     description:
       "Maximum volume, maximum strength. Perfect for heavy square items.",
     icon: Package,
@@ -65,7 +65,7 @@ const PRODUCTS = [
   {
     id: 7,
     title: "Wardrobe Box",
-    image: "/images/wardrobe_box.png",
+    image: "/images/wardrobe_box.webp",
     description:
       "Hang garments safely in transit. The ultimate moving solution for clothing.",
     icon: ShoppingBag,

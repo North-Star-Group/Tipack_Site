@@ -47,7 +47,7 @@ export default function ProductsPage() {
       size: "12x12x12",
       price: 2.5,
       badge: "Best Seller",
-      image: "/images/big_box.png",
+      image: "/images/big_box.webp",
     },
     {
       id: 2,
@@ -55,7 +55,7 @@ export default function ProductsPage() {
       size: "Varied",
       price: 1.2,
       badge: null,
-      image: "/images/packet.png",
+      image: "/images/packet.webp",
     },
     {
       id: 3,
@@ -63,7 +63,7 @@ export default function ProductsPage() {
       size: "Varied",
       price: 3.1,
       badge: "Eco",
-      image: "/images/Food_box.png",
+      image: "/images/Food_box.webp",
     },
     {
       id: 4,
@@ -71,7 +71,7 @@ export default function ProductsPage() {
       size: "Multi-Depth",
       price: 3.5,
       badge: null,
-      image: "/images/Layered_boxes.png",
+      image: "/images/Layered_boxes.webp",
     },
     {
       id: 5,
@@ -79,7 +79,7 @@ export default function ProductsPage() {
       size: "18x18x18",
       price: 4.0,
       badge: null,
-      image: "/images/heavy_duty_cube.png",
+      image: "/images/heavy_duty_cube.webp",
     },
     {
       id: 6,
@@ -87,7 +87,7 @@ export default function ProductsPage() {
       size: "24x24x40",
       price: 12.0,
       badge: "Apparel",
-      image: "/images/wardrobe_box.png",
+      image: "/images/wardrobe_box.webp",
     },
   ];
 
@@ -123,7 +123,6 @@ export default function ProductsPage() {
   const addToCart = (item: Product) => {
     setCart([...cart, item]);
     setToast(`${item.name} added to cart`);
-    setIsCartOpen(true);
 
     // Auto hide toast
     setTimeout(() => setToast(null), 3000);
@@ -141,7 +140,7 @@ export default function ProductsPage() {
       <div
         className="fixed inset-0 pointer-events-none opacity-40 mix-blend-multiply z-0"
         style={{
-          backgroundImage: `url('https://www.transparenttextures.com/patterns/crumpled-paper.png')`,
+          backgroundImage: `url('https://www.transparenttextures.com/patterns/crumpled-paper.webp')`,
           backgroundSize: "300px auto",
         }}
       />
@@ -230,8 +229,8 @@ export default function ProductsPage() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8">
         {/* --- HERO SECTION --- */}
-        <div className="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
-          <div>
+        <div className="flex flex-col md:flex-row items-center md:items-end justify-between mb-16 gap-6 text-center md:text-left">
+          <div className="flex flex-col items-center md:items-start">
             <div className="inline-block bg-black text-white px-3 py-1 font-bold text-sm mb-2 transform -rotate-2">
               EST. 2024
             </div>
@@ -241,14 +240,14 @@ export default function ProductsPage() {
                 Master Catalog
               </span>
             </h1>
-            <p className="mt-6 text-lg font-medium max-w-md border-l-4 border-[#F4D03F] pl-4">
+            <p className="mt-6 text-lg font-medium max-w-md border-l-0 md:border-l-4 border-[#F4D03F] px-4 md:px-0 md:pl-4">
               Industrial grade packaging for everyone. <br />
               Strong enough for shipping, ugly enough to be cool.
             </p>
           </div>
 
           {/* Filter Bar styled as a physical toolbar */}
-          <div className="w-full md:w-auto bg-white border-2 border-black p-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] flex flex-wrap gap-2">
+          <div className="w-full md:w-auto bg-white border-2 border-black p-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] flex flex-wrap gap-2 justify-center md:justify-start">
             <button
               onClick={() => handleScrollTo("boxes")}
               className="flex items-center gap-2 px-4 py-2 bg-[#F4D03F] border-2 border-black font-bold hover:translate-y-0.5 hover:shadow-none transition-all shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]"
