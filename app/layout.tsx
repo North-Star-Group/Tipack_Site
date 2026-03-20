@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   description: "Packaging Site",
   icons: {
     icon: "/box.png",
-  }
+  },
 };
 
 export default function RootLayout({
