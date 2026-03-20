@@ -175,7 +175,7 @@ export default function ProductsPage() {
           <div className="flex-1 overflow-y-auto p-4 space-y-4">
             {cart.length === 0 ? (
               <div className="text-center opacity-50 mt-10 font-mono text-sm">
-                Your crate is empty. <br /> Go break something.
+                Il carrello è vuoto. <br /> Aggiungi qualcosa.
               </div>
             ) : (
               cart.map((item, idx) => (
@@ -208,7 +208,7 @@ export default function ProductsPage() {
               <span>${cartTotal}</span>
             </div>
             <button className="w-full bg-black text-white py-3 font-bold uppercase tracking-wider hover:bg-[#F4D03F] hover:text-black border-2 border-transparent hover:border-black transition-all">
-              Checkout
+              Vai alla cassa
             </button>
           </div>
         </div>
@@ -235,14 +235,14 @@ export default function ProductsPage() {
               EST. 2024
             </div>
             <h1 className="text-5xl md:text-7xl font-black tracking-tighter leading-[0.9] uppercase">
-              The <br />
+              Catalogo <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4D03F] to-[#eac124] drop-shadow-[4px_4px_0px_#000]">
-                Master Catalog
+                Master
               </span>
             </h1>
             <p className="mt-6 text-lg font-medium max-w-md border-l-0 md:border-l-4 border-[#F4D03F] px-4 md:px-0 md:pl-4">
-              Industrial grade packaging for everyone. <br />
-              Strong enough for shipping, ugly enough to be cool.
+              Packaging di livello industriale per tutti. <br />
+              Resistente per la spedizione, abbastanza brutto da essere cool.
             </p>
           </div>
 

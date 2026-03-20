@@ -27,18 +27,18 @@ export default function PricingSection() {
         {/* --- HEADER --- */}
         <div className="text-center mb-16">
           <div className="inline-block bg-black text-white px-3 py-1 font-bold text-sm mb-4 transform -rotate-2">
-            NO HIDDEN FEES. NO LAWYERS.
+            NESSUNA SPESA NASCOSTA. NESSUN AVVOCATO.
           </div>
           <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none mb-8">
-            Freight <span className="bg-[#F4D03F] px-2 text-black">Rates</span>
+            Tariffe <span className="bg-[#F4D03F] px-2 text-black">di spedizione</span>
           </h1>
 
           {/* --- INDUSTRIAL TOGGLE --- */}
-          <div className="flex justify-center items-center gap-4">
+          <div className="flex justify-center items-center gap-4 mb-8">
             <span
               className={`font-black text-lg uppercase ${!isAnnual ? "text-black" : "text-gray-400"}`}
             >
-              Monthly
+              Mensile
             </span>
 
             {/* The Switch Mechanism */}
@@ -63,7 +63,7 @@ export default function PricingSection() {
             <span
               className={`font-black text-lg uppercase ${isAnnual ? "text-black" : "text-gray-400"}`}
             >
-              Yearly
+              Annuale
             </span>
           </div>
         </div>
@@ -72,18 +72,18 @@ export default function PricingSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
           {/* TIER 1: THE GARAGE */}
           <PricingCard
-            title="The Garage"
+            title="Garage"
             icon={Box}
             price={isAnnual ? "0" : "0"}
-            period={isAnnual ? "/yr" : "/mo"}
-            desc="For bootstrappers and basement operations."
+            period={isAnnual ? "/anno" : "/mese"}
+            desc="Per startup e operazioni in garage."
             features={[
-              "Access to Standard Catalog",
-              "Pay-per-unit pricing",
-              "Slow shipping (3-5 days)",
-              "No custom branding",
+              "Accesso al catalogo standard",
+              "Prezzo per unità",
+              "Spedizione lenta (3-5 giorni)",
+              "Nessuna personalizzazione",
             ]}
-            buttonText="Start Free"
+            buttonText="Inizia gratis"
             link="/Contact"
           />
 
@@ -92,44 +92,44 @@ export default function PricingSection() {
             {/* Hazard Tape "Most Popular" */}
             <div className="absolute -top-4 left-0 right-0 z-20 flex justify-center">
               <div className="bg-[#F4D03F] border-2 border-black px-4 py-1 font-black text-xs uppercase tracking-widest shadow-[2px_2px_0px_0px_#000]">
-                Standard Issue
+                Edizione standard
               </div>
             </div>
 
             <PricingCard
-              title="Warehouse"
+              title="Magazzino"
               icon={Container}
               price={isAnnual ? "290" : "29"}
-              period={isAnnual ? "/yr" : "/mo"}
-              desc="For growing brands shipping actual volume."
+              period={isAnnual ? "/anno" : "/mese"}
+              desc="Per marchi in crescita che spediscono volume reale."
               highlight={true}
               features={[
-                "Wholesale Discounts (-15%)",
-                "Priority Fulfillment",
-                "Custom Logo Stamping",
-                "Net-30 Payment Terms",
-                "Dedicated Account Manager",
+                "Sconti all'ingrosso (-15%)",
+                "Evasione prioritaria",
+                "Stampa logo personalizzata",
+                "Termini di pagamento Net-30",
+                "Account manager dedicato",
               ]}
-              buttonText="Upgrade Now"
+              buttonText="Passa a questo piano"
               link="/Contact"
             />
           </div>
 
           {/* TIER 3: THE FACTORY */}
           <PricingCard
-            title="Industrial"
+            title="Industriale"
             icon={Anchor}
-            price="Custom"
+            price="Su richiesta"
             period=""
-            desc="You need pallets, not boxes. Let's talk logistics."
+            desc="Hai bisogno di pallet, non di scatole. Parliamo di logistica."
             features={[
-              "Volume Pricing (Pallet rates)",
-              "Custom Engineering / CAD",
-              "Warehousing (3PL)",
-              "Global Freight Forwarding",
-              "API Integration",
+              "Prezzi volume (tariffe pallet)",
+              "Ingegneria personalizzata / CAD",
+              "Magazzinaggio (3PL)",
+              "Spedizioni internazionali",
+              "Integrazione API",
             ]}
-            buttonText="Contact Sales"
+            buttonText="Contatta vendite"
             isDark={false}
             link="/Contact"
           />
@@ -138,12 +138,12 @@ export default function PricingSection() {
         {/* --- FINE PRINT --- */}
         <div className="mt-20 border-t-2 border-dashed border-gray-400 pt-8 text-center max-w-2xl mx-auto">
           <h3 className="font-black uppercase text-xl mb-4 flex items-center justify-center gap-2">
-            <Zap size={20} className="fill-[#F4D03F]" /> Safety Protocols
+            <Zap size={20} className="fill-[#F4D03F]" /> Protocolli di Sicurezza
           </h3>
           <p className="font-mono text-sm text-gray-500 mb-4">
-            * Prices exclude applicable VAT and shipping surcharges. Heavy items
-            (machinery, lead, dumbbells) incur a "Heavy Metal" fee. We are not
-            responsible if your customers cut themselves opening the package.
+            * I prezzi escludono IVA e sovrapprezzi di spedizione. Oggetti pesanti
+            (macchinari, piombo, manubri) possono avere una tariffa "Heavy Metal".
+            Non siamo responsabili se i tuoi clienti si feriscono aprendo il pacco.
           </p>
         </div>
       </div>
@@ -218,7 +218,7 @@ function PricingCard({
 
         <div className="mb-8 border-b-2 border-dashed border-gray-500 pb-8">
           <span className="text-6xl font-black tracking-tighter">
-            {price === "Custom" ? "Call" : `$${price}`}
+            {price === "Custom" ? "Chiama" : price === "Su richiesta" ? "Su richiesta" : `$${price}`}
           </span>
           <span className="font-mono text-lg font-bold">{period}</span>
         </div>
@@ -249,11 +249,10 @@ function PricingCard({
             href={link}
             className={`
                         w-full block text-center py-4 font-black uppercase tracking-widest border-2 border-transparent transition-all
-                        ${
-                          isDark
-                            ? "bg-white text-black hover:bg-gray-200"
-                            : "bg-black text-white hover:bg-[#F4D03F] hover:text-black hover:border-black"
-                        }
+                        ${isDark
+                ? "bg-white text-black hover:bg-gray-200"
+                : "bg-black text-white hover:bg-[#F4D03F] hover:text-black hover:border-black"
+              }
                     `}
           >
             {buttonText}
@@ -262,11 +261,10 @@ function PricingCard({
           <button
             className={`
                         w-full py-4 font-black uppercase tracking-widest border-2 border-transparent transition-all
-                        ${
-                          isDark
-                            ? "bg-white text-black hover:bg-gray-200"
-                            : "bg-black text-white hover:bg-[#F4D03F] hover:text-black hover:border-black"
-                        }
+                        ${isDark
+                ? "bg-white text-black hover:bg-gray-200"
+                : "bg-black text-white hover:bg-[#F4D03F] hover:text-black hover:border-black"
+              }
                     `}
           >
             {buttonText}

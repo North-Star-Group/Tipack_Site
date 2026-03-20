@@ -50,19 +50,17 @@ export default function ContactSection() {
             <div className="flex items-center justify-center md:justify-start gap-2 mb-2">
               <Radio className="animate-pulse text-red-600" size={20} />
               <span className="font-mono text-sm font-bold uppercase tracking-widest text-red-600">
-                Live Feed // Channel 4
+                Trasmissione in diretta // Canale 4
               </span>
             </div>
             <h1 className="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-[0.85]">
-              Dispatch <br /> Center
+              Centro <br /> Contatti
             </h1>
           </div>
 
           <div className="bg-black text-white p-4 max-w-sm border-l-4 border-[#F4D03F] shadow-[8px_8px_0px_0px_rgba(0,0,0,0.2)] text-left w-full md:w-auto mt-6 md:mt-0">
             <p className="font-mono text-xs uppercase leading-relaxed">
-              <strong className="text-[#F4D03F]">NOTICE:</strong> Due to high
-              volume of orders, our support team is currently prioritizing
-              shipping over chatting. Keep it brief.
+              <strong className="text-[#F4D03F]">AVVISO:</strong> A causa dell'elevato volume di ordini, il nostro supporto dà priorità alla spedizione rispetto alla chat. Sii sintetico.
             </p>
           </div>
         </div>
@@ -87,7 +85,7 @@ export default function ContactSection() {
                 }}
               />
               <div className="bg-[#F4D03F] px-6 py-1 text-xl font-black uppercase tracking-tight shadow-[0px_4px_6px_rgba(0,0,0,0.1)]">
-                Transmission Log
+                Registro trasmissioni
               </div>
             </div>
 
@@ -100,16 +98,16 @@ export default function ContactSection() {
                     className="text-[#F4D03F] fill-black mb-4"
                   />
                   <h3 className="text-4xl font-black uppercase mb-2">
-                    Message <br /> Logged
+                    Messaggio <br /> Ricevuto
                   </h3>
                   <p className="font-mono font-bold text-gray-500">
-                    REF ID: {ticketID}
+                    ID RIF.: {ticketID}
                   </p>
                   <button
                     onClick={() => setFormStatus("idle")}
                     className="mt-8 underline font-bold uppercase hover:text-[#F4D03F]"
                   >
-                    Send another
+                    Invia un altro
                   </button>
                 </div>
               ) : null}
@@ -120,14 +118,14 @@ export default function ContactSection() {
                     TICKET_ID: <span className="text-black">{ticketID}</span>
                   </span>
                   <span className="font-mono text-xs font-bold text-gray-400">
-                    PRIORITY: <span className="text-red-600">NORMAL</span>
+                    PRIORITÀ: <span className="text-red-600">NORMALE</span>
                   </span>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="group">
                     <label className="block text-xs font-black uppercase mb-1 ml-1 group-focus-within:text-[#F4D03F] transition-colors">
-                      Operative Name
+                      Nome operatore
                     </label>
                     <input
                       required
@@ -138,7 +136,7 @@ export default function ContactSection() {
                   </div>
                   <div className="group">
                     <label className="block text-xs font-black uppercase mb-1 ml-1 group-focus-within:text-[#F4D03F] transition-colors">
-                      Comms Frequency (Email)
+                      Frequenza contatto (Email)
                     </label>
                     <input
                       required
@@ -151,14 +149,14 @@ export default function ContactSection() {
 
                 <div className="group">
                   <label className="block text-xs font-black uppercase mb-1 ml-1 group-focus-within:text-[#F4D03F] transition-colors">
-                    Subject
+                    Oggetto
                   </label>
                   <div className="relative">
                     <select className="w-full bg-[#F2F2F2] border-2 border-transparent focus:bg-white focus:border-black p-3 font-bold uppercase appearance-none focus:outline-none focus:shadow-[4px_4px_0px_0px_#F4D03F] transition-all cursor-pointer">
-                      <option>Order Inquiry (Where is my stuff?)</option>
-                      <option>Wholesale Application</option>
-                      <option>Report Damaged Cargo</option>
-                      <option>General Threat/Compliment</option>
+                      <option>Richiesta ordine (Dove è la mia merce?)</option>
+                      <option>Richiesta conto all'ingrosso</option>
+                      <option>Segnala merce danneggiata</option>
+                      <option>Minaccia/Complimento generale</option>
                     </select>
                     <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
                       ▼
@@ -168,12 +166,12 @@ export default function ContactSection() {
 
                 <div className="group">
                   <label className="block text-xs font-black uppercase mb-1 ml-1 group-focus-within:text-[#F4D03F] transition-colors">
-                    Message Payload
+                    Messaggio
                   </label>
                   <textarea
                     required
                     rows={5}
-                    placeholder="STATE YOUR BUSINESS..."
+                    placeholder="SCRIVI IL TUO MESSAGGIO..."
                     className="w-full bg-[#F2F2F2] border-2 border-transparent focus:bg-white focus:border-black p-3 font-bold uppercase placeholder-gray-400 focus:outline-none focus:shadow-[4px_4px_0px_0px_#F4D03F] transition-all resize-none"
                   ></textarea>
                 </div>
@@ -185,10 +183,10 @@ export default function ContactSection() {
                     className="w-full bg-black text-white py-4 font-black uppercase tracking-widest hover:bg-[#F4D03F] hover:text-black hover:border-black border-2 border-transparent transition-all flex items-center justify-center gap-2 group disabled:opacity-70 disabled:cursor-not-allowed"
                   >
                     {formStatus === "sending" ? (
-                      <span className="animate-pulse">Transmitting...</span>
+                      <span className="animate-pulse">Trasmissione in corso...</span>
                     ) : (
                       <>
-                        Initiate Transmission{" "}
+                        Invia messaggio{" "}
                         <Send
                           size={20}
                           className="group-hover:translate-x-1 transition-transform"
@@ -237,7 +235,7 @@ export default function ContactSection() {
             <div className="bg-white border-2 border-black p-6 shadow-[8px_8px_0px_0px_#FF4D4D] flex flex-col justify-between flex-1">
               <div>
                 <h3 className="text-3xl font-black uppercase mb-6 flex items-center gap-2">
-                  <Siren className="text-[#FF4D4D]" /> Hardlines
+                  <Siren className="text-[#FF4D4D]" /> Contatti rapidi
                 </h3>
 
                 <ul className="space-y-6">
@@ -247,7 +245,7 @@ export default function ContactSection() {
                     </div>
                     <div>
                       <p className="font-mono text-xs text-gray-500 font-bold">
-                        EMERGENCY ONLY
+                        SOLO EMERGENZE
                       </p>
                       <p className="text-xl font-black tracking-tight hover:underline cursor-pointer">
                         1-800-HEAVY-BOX
@@ -260,7 +258,7 @@ export default function ContactSection() {
                     </div>
                     <div>
                       <p className="font-mono text-xs text-gray-500 font-bold">
-                        GENERAL INQUIRIES
+                        RICHIESTE GENERALI
                       </p>
                       <p className="text-xl font-black tracking-tight hover:underline cursor-pointer">
                         supply@crate.com
@@ -273,11 +271,11 @@ export default function ContactSection() {
                     </div>
                     <div>
                       <p className="font-mono text-xs text-gray-500 font-bold">
-                        LOADING DOCK HOURS
+                        ORARI CARICO/SCARICO
                       </p>
-                      <p className="text-lg font-bold">Mon-Fri: 0600 - 1800</p>
+                      <p className="text-lg font-bold">Lun-Ven: 06:00 - 18:00</p>
                       <p className="text-lg font-bold text-gray-400">
-                        Sat-Sun: CLOSED
+                        Sab-Dom: CHIUSO
                       </p>
                     </div>
                   </li>
@@ -286,7 +284,7 @@ export default function ContactSection() {
 
               <div className="mt-8 border-t-2 border-black pt-4">
                 <p className="font-mono text-xs text-gray-500">
-                  PHYSICAL ADDRESS: <br />
+                  INDIRIZZO FISICO: <br />
                   <span className="text-black font-bold text-sm">
                     89 Industrial Blvd, Dock 4, Brooklyn, NY 11211
                   </span>
@@ -300,7 +298,7 @@ export default function ContactSection() {
         <div className="mt-20 bg-[#F4D03F] border-2 border-black p-4 flex items-center justify-center gap-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
           <AlertTriangle className="text-black" size={24} />
           <p className="font-bold text-sm md:text-base uppercase tracking-wide">
-            Warning: Visitors without steel-toe boots will be denied entry.
+            Avviso: Visitatori senza scarpe antinfortunistiche saranno respinti.
           </p>
           <AlertTriangle className="text-black" size={24} />
         </div>

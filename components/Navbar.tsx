@@ -79,7 +79,7 @@ export default function Navbar() {
             <div className="group relative h-full">
               <Link href="/Products">
                 <div className="flex items-center gap-1 cursor-pointer py-2">
-                  Products{" "}
+                  Prodotti{" "}
                   <ChevronDown
                     size={14}
                     className="group-hover:rotate-180 transition-transform duration-200"
@@ -100,9 +100,9 @@ export default function Navbar() {
                   >
                     <Box size={18} className="mt-0.5" />
                     <div>
-                      <div className="text-sm font-black">Boxes & Mailers</div>
+                      <div className="text-sm font-black">Scatole e buste</div>
                       <div className="text-xs font-normal opacity-70">
-                        Corrugated & rigid options
+                        Opzioni ondulate e rigide
                       </div>
                     </div>
                   </Link>
@@ -112,9 +112,9 @@ export default function Navbar() {
                   >
                     <Package size={18} className="mt-0.5" />
                     <div>
-                      <div className="text-sm font-black">Adhesives</div>
+                      <div className="text-sm font-black">Adesivi</div>
                       <div className="text-xs font-normal opacity-70">
-                        Tapes, glues & sealants
+                        Nastri, colle e sigillanti
                       </div>
                     </div>
                   </Link>
@@ -126,9 +126,9 @@ export default function Navbar() {
                       !
                     </div>
                     <div>
-                      <div className="text-sm font-black">Clearance</div>
+                      <div className="text-sm font-black">In Saldo</div>
                       <div className="text-xs font-normal opacity-70">
-                        Last chance items
+                        Articoli in offerta finale
                       </div>
                     </div>
                   </Link>
@@ -140,7 +140,7 @@ export default function Navbar() {
             <div className="group relative h-full">
               <Link href="/Services">
                 <div className="flex items-center gap-1 cursor-pointer py-2">
-                  Services{" "}
+                  Servizi{" "}
                   <ChevronDown
                     size={14}
                     className="group-hover:rotate-180 transition-transform duration-200"
@@ -159,9 +159,9 @@ export default function Navbar() {
                   >
                     <Printer size={18} className="mt-0.5" />
                     <div>
-                      <div className="text-sm font-black">Custom Printing</div>
+                      <div className="text-sm font-black">Stampa personalizzata</div>
                       <div className="text-xs font-normal opacity-70">
-                        Branded packaging
+                        Packaging brandizzato
                       </div>
                     </div>
                   </Link>
@@ -171,9 +171,9 @@ export default function Navbar() {
                   >
                     <Truck size={18} className="mt-0.5" />
                     <div>
-                      <div className="text-sm font-black">Logistics</div>
+                      <div className="text-sm font-black">Logistica</div>
                       <div className="text-xs font-normal opacity-70">
-                        Warehousing & shipping
+                        Magazzino e spedizioni
                       </div>
                     </div>
                   </Link>
@@ -183,9 +183,9 @@ export default function Navbar() {
                   >
                     <PenTool size={18} className="mt-0.5" />
                     <div>
-                      <div className="text-sm font-black">Design Studio</div>
+                      <div className="text-sm font-black">Studio grafico</div>
                       <div className="text-xs font-normal opacity-70">
-                        Get help with artwork
+                        Aiuto con la grafica
                       </div>
                     </div>
                   </Link>
@@ -197,19 +197,19 @@ export default function Navbar() {
               href="/Brands"
               className="hover:opacity-70 transition-opacity"
             >
-              Brands
+              Marchi
             </Link>
             <Link
               href="/Catalog"
               className="hover:opacity-70 transition-opacity"
             >
-              Catalog
+              Catalogo
             </Link>
             <Link
               href="/Pricing"
               className="hover:opacity-70 transition-opacity"
             >
-              Pricing
+              Prezzi
             </Link>
           </div>
 
@@ -229,14 +229,14 @@ export default function Navbar() {
               href="/Contact"
               className="text-sm font-medium text-[#2D2424] hover:opacity-70 transition-opacity"
             >
-              Submit Request
+              Richiedi preventivo
             </Link>
             <Link href="/Contact">
               <Button
                 variant="primary"
                 className="bg-white text-black border-2 border-black shadow-none hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-0.5 transition-all"
               >
-                Contact Us
+                Contattaci
               </Button>
             </Link>
           </div>
@@ -261,35 +261,35 @@ export default function Navbar() {
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="hover:text-yellow-600 transition-colors"
               >
-                Products
+                Prodotti
               </Link>
               <Link
                 href="/Services"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="hover:text-yellow-600 transition-colors"
               >
-                Services
+                Servizi
               </Link>
               <Link
                 href="/Brands"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="hover:text-yellow-600 transition-colors"
               >
-                Brands
+                Marchi
               </Link>
               <Link
                 href="/Catalog"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="hover:text-yellow-600 transition-colors"
               >
-                Catalog
+                Catalogo
               </Link>
               <Link
                 href="/Pricing"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="hover:text-yellow-600 transition-colors"
               >
-                Pricing
+                Prezzi
               </Link>
               <hr className="border-black opacity-20" />
               <Link
@@ -297,14 +297,14 @@ export default function Navbar() {
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="hover:text-yellow-600 transition-colors"
               >
-                Submit Request
+                Richiedi preventivo
               </Link>
               <Link href="/Contact" onClick={() => setIsMobileMenuOpen(false)}>
                 <Button
                   variant="primary"
                   className="w-full justify-center border-2 border-black bg-[#F4D03F] hover:bg-[#eac124]"
                 >
-                  Contact Us
+                  Contattaci
                 </Button>
               </Link>
             </div>
