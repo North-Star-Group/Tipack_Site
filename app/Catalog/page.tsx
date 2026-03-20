@@ -17,8 +17,8 @@ import Image from "next/image";
 const INVENTORY = [
   {
     id: "BX-101",
-    name: "Heavy Duty Cube",
-    category: "Boxes",
+    name: "Cubo Heavy Duty",
+    category: "Scatole",
     price: 3.5,
     stock: "High",
     sku: "882-A",
@@ -26,8 +26,8 @@ const INVENTORY = [
   },
   {
     id: "BX-104",
-    name: "Flat Shipper",
-    category: "Boxes",
+    name: "Scatola Plano",
+    category: "Scatole",
     price: 1.25,
     stock: "Low",
     sku: "882-B",
@@ -35,8 +35,8 @@ const INVENTORY = [
   },
   {
     id: "ML-202",
-    name: "Supplements Packaging",
-    category: "Boxes",
+    name: "Packaging per integratori",
+    category: "Scatole",
     price: 0.45,
     stock: "High",
     sku: "991-X",
@@ -44,8 +44,8 @@ const INVENTORY = [
   },
   {
     id: "ML-205",
-    name: "Food Packaging",
-    category: "Boxes",
+    name: "Packaging alimentare",
+    category: "Scatole",
     price: 0.85,
     stock: "Out",
     sku: "991-Y",
@@ -53,8 +53,8 @@ const INVENTORY = [
   },
   {
     id: "TP-301",
-    name: "Cosmetic Boxes",
-    category: "Boxes",
+    name: "Scatole cosmetiche",
+    category: "Scatole",
     price: 4.5,
     stock: "High",
     sku: "772-T",
@@ -62,8 +62,8 @@ const INVENTORY = [
   },
   {
     id: "TP-305",
-    name: "Wardrobe Mover",
-    category: "Supplies",
+    name: "Scatola guardaroba",
+    category: "Forniture",
     price: 9.0,
     stock: "Med",
     sku: "772-L",
@@ -71,8 +71,8 @@ const INVENTORY = [
   },
   {
     id: "BX-999",
-    name: "Master Crate",
-    category: "Boxes",
+    name: "Cassa Master",
+    category: "Scatole",
     price: 12.0,
     stock: "Med",
     sku: "882-Z",
@@ -80,8 +80,8 @@ const INVENTORY = [
   },
   {
     id: "FL-001",
-    name: "General Purpose Boxes",
-    category: "Boxes",
+    name: "Scatole uso generale",
+    category: "Scatole",
     price: 15.0,
     stock: "High",
     sku: "661-P",
@@ -89,7 +89,7 @@ const INVENTORY = [
   },
 ];
 
-const CATEGORIES = ["All", "Boxes", "Mailers", "Supplies"];
+const CATEGORIES = ["Tutti", "Scatole", "Buste", "Forniture"];
 
 export default function CatalogSection() {
   // --- STATE ---
@@ -128,17 +128,17 @@ export default function CatalogSection() {
           <div className="flex flex-col md:flex-row items-center md:items-end justify-between gap-6 text-center md:text-left">
             <div className="flex flex-col items-center md:items-start">
               <div className="bg-black text-white inline-block px-2 py-1 mb-2 font-mono text-xs font-bold uppercase tracking-widest">
-                System: Online // Database: V.2.4
+                Sistema: Online // Database: V.2.4
               </div>
               <h1 className="text-6xl font-black uppercase tracking-tighter leading-none">
-                Master <br /> Inventory
+                Inventario <br /> Master
               </h1>
             </div>
 
             {/* Search Input - Industrial Style */}
             <div className="w-full md:w-auto flex-1 max-w-md text-left mt-6 md:mt-0">
               <label className="block text-xs font-bold uppercase mb-1 ml-1">
-                Search SKU or Name
+                Cerca SKU o nome
               </label>
               <div className="relative group">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -182,8 +182,8 @@ export default function CatalogSection() {
                         key={cat}
                         onClick={() => setActiveCategory(cat)}
                         className={`w-full text-left px-3 py-2 font-bold uppercase border-2 transition-all flex justify-between items-center ${activeCategory === cat
-                            ? "bg-[#F4D03F] border-black text-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] translate-x-1"
-                            : "bg-transparent border-transparent text-gray-400 hover:border-gray-200 hover:text-black"
+                          ? "bg-[#F4D03F] border-black text-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] translate-x-1"
+                          : "bg-transparent border-transparent text-gray-400 hover:border-gray-200 hover:text-black"
                           }`}
                       >
                         {cat}
@@ -228,7 +228,7 @@ export default function CatalogSection() {
             <div className="mb-6 flex items-center gap-2">
               <div className="h-[2px] bg-black flex-1"></div>
               <div className="font-mono text-xs font-bold bg-[#F4D03F] px-2 py-1 border border-black">
-                SHOWING {filteredInventory.length} UNITS
+                MOSTRATI {filteredInventory.length} PEZZI
               </div>
             </div>
 
@@ -254,7 +254,7 @@ export default function CatalogSection() {
               <button className="relative inline-block group">
                 <span className="absolute inset-0 w-full h-full bg-black translate-x-1 translate-y-1 transition-transform group-hover:translate-x-2 group-hover:translate-y-2"></span>
                 <span className="relative block border-2 border-black bg-white px-8 py-4 font-black uppercase tracking-widest text-lg hover:bg-[#F4D03F] transition-colors">
-                  Load Next Batch
+                  Carica il prossimo lotto
                 </span>
               </button>
             </div>
@@ -286,7 +286,7 @@ function InventoryCard({ item }: { item: any }) {
             className={`w-2 h-2 rounded-full border border-black ${getStockColor(item.stock)}`}
           ></div>
           <span className="font-mono text-[10px] font-bold uppercase">
-            {item.stock === "Out" ? "NO STOCK" : "AVAILABLE"}
+            {item.stock === "Out" ? "ESAURITO" : "DISPONIBILE"}
           </span>
         </div>
       </div>

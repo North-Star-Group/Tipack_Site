@@ -53,18 +53,19 @@ export default function ServicesPage() {
         <div className="flex flex-col md:flex-row items-center md:items-end justify-between mb-16 gap-6 text-center md:text-left">
           <div className="flex flex-col items-center md:items-start">
             <div className="inline-block bg-black text-white px-3 py-1 font-bold text-sm mb-2 transform rotate-1">
-              OPERATIONS DEPT.
+              REPARTO OPERAZIONI
             </div>
             <h1 className="text-5xl md:text-7xl font-black tracking-tighter leading-[0.9] uppercase">
-              Heavy Duty <br />
+              Soluzioni
+              <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4D03F] to-[#eac124] drop-shadow-[4px_4px_0px_#000]">
-                Solutions
+                Heavy Duty
               </span>
             </h1>
             <p className="mt-6 text-lg font-medium max-w-md border-l-0 border-[#F4D03F] px-4 md:border-l-4 md:pl-4 md:px-0">
-              We don't just sell boxes. We design, print, and ship the chaos.
+              Non vendiamo solo scatole. Progettiamo, stampiamo e spediamo il caos.
               <br />
-              Full-stack packaging infrastructure.
+              Infrastruttura packaging completa.
             </p>
           </div>
 
@@ -74,19 +75,19 @@ export default function ServicesPage() {
               onClick={() => handleScrollTo("print")}
               className={`flex items-center gap-2 px-4 py-2 border-2 border-black font-bold transition-all shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-y-0.5 hover:shadow-none ${activeTab === "print" ? "bg-[#F4D03F]" : "bg-white hover:bg-gray-50"}`}
             >
-              <Printer size={18} /> Custom Print
+              <Printer size={18} /> Stampa personalizzata
             </button>
             <button
               onClick={() => handleScrollTo("logistics")}
               className={`flex items-center gap-2 px-4 py-2 border-2 border-black font-bold transition-all shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-y-0.5 hover:shadow-none ${activeTab === "logistics" ? "bg-[#F4D03F]" : "bg-white hover:bg-gray-50"}`}
             >
-              <Truck size={18} /> Logistics
+              <Truck size={18} /> Logistica
             </button>
             <button
               onClick={() => handleScrollTo("design")}
               className={`flex items-center gap-2 px-4 py-2 border-2 border-black font-bold transition-all shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-y-0.5 hover:shadow-none ${activeTab === "design" ? "bg-[#60A5FA] text-black" : "bg-white hover:bg-gray-50"}`}
             >
-              <PenTool size={18} /> Design Studio
+              <PenTool size={18} /> Studio grafico
             </button>
           </div>
         </div>
@@ -110,7 +111,7 @@ export default function ServicesPage() {
               }}
             />
             <div className="bg-[#F4D03F] px-8 py-2 text-2xl font-black uppercase tracking-tight shadow-[0px_4px_6px_rgba(0,0,0,0.1)] flex items-center gap-2">
-              <Stamp size={24} /> Ink & Branding
+              <Stamp size={24} /> Inchiostro e Branding
             </div>
           </div>
 
@@ -118,35 +119,34 @@ export default function ServicesPage() {
             {/* Left: Content */}
             <div className="bg-white border-2 border-black p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
               <h2 className="text-4xl font-black mb-4 uppercase leading-none">
-                Make it <span className="bg-[#F4D03F] px-1">Loud.</span>
+                Fallo <span className="bg-[#F4D03F] px-1">Impatto.</span>
               </h2>
               <p className="font-medium text-lg mb-6">
-                Generic boxes get thrown away. Branded boxes get Instagrammed.
-                We use high-vis industrial inks that bleed into the cardboard
-                for that raw, stamped look.
+                Le scatole generiche finiscono nella spazzatura. Le scatole brandizzate finiscono su Instagram.
+                Usiamo inchiostri industriali ad alto impatto che penetrano il cartone per un look autentico.
               </p>
 
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start gap-3">
                   <CheckSquare className="text-[#F4D03F] fill-black shrink-0" />
                   <span className="font-bold">
-                    Flexographic printing (Cheap, fast, gritty)
+                    Stampa flessografica (economica, veloce, sporca)
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckSquare className="text-[#F4D03F] fill-black shrink-0" />
                   <span className="font-bold">
-                    Digital direct-to-corrugate (For limited drops)
+                    Stampa digitale diretta su cartone (per tirature limitate)
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckSquare className="text-[#F4D03F] fill-black shrink-0" />
-                  <span className="font-bold">Inside-the-box messaging</span>
+                  <span className="font-bold">Messaggi all'interno della scatola</span>
                 </li>
               </ul>
 
               <button className="w-full bg-black text-white py-4 font-black uppercase tracking-widest hover:bg-[#F4D03F] hover:text-black border-2 border-transparent hover:border-black transition-all">
-                Upload your vector
+                Carica il tuo vettoriale
               </button>
             </div>
 
@@ -179,7 +179,7 @@ export default function ServicesPage() {
 
               {/* Sticker */}
               <div className="absolute top-10 right-10 bg-[#F4D03F] text-black text-xs font-black px-3 py-2 border-2 border-black transform rotate-12 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                INK READY
+                PRONTO A STAMPARE
               </div>
             </div>
           </div>
@@ -204,7 +204,7 @@ export default function ServicesPage() {
               }}
             />
             <div className="bg-[#F4D03F] px-8 py-2 text-2xl font-black uppercase tracking-tight shadow-[0px_4px_6px_rgba(0,0,0,0.1)] flex items-center gap-2">
-              <Truck size={24} /> 3PL & Fulfillment
+              <Truck size={24} /> 3PL e Evasione ordini
             </div>
           </div>
 
@@ -221,10 +221,9 @@ export default function ServicesPage() {
                     1
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg">Warehousing</h3>
+                    <h3 className="font-bold text-lg">Magazzinaggio</h3>
                     <p className="text-sm font-medium text-gray-600">
-                      We store your junk in our secure, climate-controlled
-                      fortresses.
+                      Conserviamo la tua merce nei nostri depositi sicuri e climatizzati.
                     </p>
                   </div>
                 </div>
@@ -236,8 +235,7 @@ export default function ServicesPage() {
                   <div>
                     <h3 className="font-bold text-lg">Pick & Pack</h3>
                     <p className="text-sm font-medium text-gray-600">
-                      Robots (and some humans) pack your orders with aggressive
-                      efficiency.
+                      Robot (e qualche umano) prelevano e imballano i tuoi ordini con efficienza aggressiva.
                     </p>
                   </div>
                 </div>
@@ -247,9 +245,9 @@ export default function ServicesPage() {
                     3
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg">Shipping</h3>
+                    <h3 className="font-bold text-lg">Spedizione</h3>
                     <p className="text-sm font-medium text-gray-600">
-                      Discounted rates with carriers who fear us.
+                      Tariffe scontate con corrieri che ci temono.
                     </p>
                   </div>
                 </div>
@@ -261,15 +259,15 @@ export default function ServicesPage() {
               <div className="bg-[#F4D03F] border-2 border-black p-6 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 transition-transform">
                 <Package className="mb-2" size={32} />
                 <h4 className="font-black text-3xl">99.9%</h4>
-                <p className="font-mono text-sm font-bold">Accuracy Rate</p>
+                <p className="font-mono text-sm font-bold">Precisione</p>
               </div>
               <div className="bg-white border-2 border-black p-6 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 transition-transform">
                 <ClipboardList className="mb-2" size={32} />
                 <h4 className="font-black text-3xl">24h</h4>
-                <p className="font-mono text-sm font-bold">Turnaround Time</p>
+                <p className="font-mono text-sm font-bold">Tempo di evasione</p>
               </div>
               <button className="mt-auto bg-black text-white p-4 font-bold border-2 border-transparent hover:bg-white hover:text-black hover:border-black transition-colors flex justify-between items-center group">
-                <span>Get Logistics Quote</span>
+                <span>Richiedi preventivo logistico</span>
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
@@ -295,7 +293,7 @@ export default function ServicesPage() {
               }}
             />
             <div className="bg-[#60A5FA] text-black px-8 py-2 text-2xl font-black uppercase tracking-tight shadow-[0px_4px_6px_rgba(0,0,0,0.1)] flex items-center gap-2">
-              <Ruler size={24} /> Structural Engineering
+              <Ruler size={24} /> Ingegneria strutturale
             </div>
           </div>
 
@@ -312,24 +310,24 @@ export default function ServicesPage() {
             <div className="relative z-10 flex flex-col md:flex-row gap-12 items-center">
               <div className="flex-1">
                 <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight">
-                  IF IT FITS, <br />
-                  IT SHIPS.
+                  SE CI STA, <br />
+                  SI SPEDISCE.
                 </h2>
                 <p className="text-white font-mono mb-8 max-w-lg">
-                  Need a box for a surfboard? A chandelier? A car engine? Our
-                  structural engineers use CAD to design custom die-lines that
-                  minimize waste and maximize protection.
+                  Ti serve una scatola per una tavola da surf? Un lampadario? Un motore d'auto? I nostri
+                  ingegneri strutturali usano CAD per progettare fustelle su misura che
+                  riducono gli sprechi e aumentano la protezione.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <div className="border border-white/30 px-4 py-2 font-mono text-sm">
                     <span className="block text-gray-500 text-xs">
-                      TOLERANCE
+                      TOLLERANZA
                     </span>
                     +/- 1mm
                   </div>
                   <div className="border border-white/30 px-4 py-2 font-mono text-sm">
                     <span className="block text-gray-500 text-xs">
-                      MATERIAL
+                      MATERIALE
                     </span>
                     E-Flute
                   </div>
@@ -387,7 +385,7 @@ export default function ServicesPage() {
             <div className="mt-8 pt-8 border-t border-white/20 flex justify-end">
               <Link href="/Contact">
                 <button className="bg-[#60A5FA] text-black px-8 py-3 font-bold border-2 border-transparent hover:border-white transition-all uppercase tracking-wider">
-                  Request CAD Files
+                  Richiedi file CAD
                 </button>
               </Link>
             </div>

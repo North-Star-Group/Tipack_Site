@@ -77,19 +77,19 @@ export default function TipackFooter() {
               </h2>
             </Link>
             <p className="font-medium text-lg leading-relaxed opacity-90">
-              The packaging company that hates boring brown boxes. We help
-              brands stand out before the customer even opens the package.
+              L'azienda di packaging che odia le noiose scatole marroni. Aiutiamo
+              i marchi a distinguersi prima ancora che il cliente apra il pacco.
             </p>
 
             {/* Newsletter Mini-Form */}
             <div className="pt-4">
               <p className="text-sm font-bold uppercase tracking-widest opacity-60 mb-2">
-                Join the club
+                Iscriviti
               </p>
               <div className="flex gap-2">
                 <input
                   type="email"
-                  placeholder="email@domain.com"
+                  placeholder="email@esempio.it"
                   className="bg-white/50 border-2 border-black/10 px-4 py-2 rounded-lg w-full placeholder:text-black/30 focus:outline-none focus:border-black focus:bg-white transition-all"
                 />
                 <button className="bg-black text-[#F4D03F] p-2 rounded-lg hover:scale-110 transition-transform">
@@ -103,14 +103,14 @@ export default function TipackFooter() {
           <div className="md:col-span-8 grid grid-cols-2 md:grid-cols-3 gap-8">
             {/* Column 1 */}
             <div>
-              <h3 className="font-black text-xl mb-6">Products</h3>
+              <h3 className="font-black text-xl mb-6">Prodotti</h3>
               <ul className="space-y-4 font-bold text-black/70">
                 <li>
                   <Link
                     href="#"
                     className="hover:text-black hover:translate-x-1 inline-block transition-all"
                   >
-                    Mailer Boxes
+                    Scatole da spedizione
                   </Link>
                 </li>
                 <li>
@@ -118,7 +118,7 @@ export default function TipackFooter() {
                     href="#"
                     className="hover:text-black hover:translate-x-1 inline-block transition-all"
                   >
-                    Poly Mailers
+                    Buste imbottite
                   </Link>
                 </li>
                 <li>
@@ -126,7 +126,7 @@ export default function TipackFooter() {
                     href="#"
                     className="hover:text-black hover:translate-x-1 inline-block transition-all"
                   >
-                    Custom Tape
+                    Nastro personalizzato
                   </Link>
                 </li>
                 <li>
@@ -134,7 +134,7 @@ export default function TipackFooter() {
                     href="#"
                     className="hover:text-black hover:translate-x-1 inline-block transition-all"
                   >
-                    Tissue Paper
+                    Carta velina
                   </Link>
                 </li>
               </ul>
@@ -142,14 +142,14 @@ export default function TipackFooter() {
 
             {/* Column 2 */}
             <div>
-              <h3 className="font-black text-xl mb-6">Company</h3>
+              <h3 className="font-black text-xl mb-6">Azienda</h3>
               <ul className="space-y-4 font-bold text-black/70">
                 <li>
                   <Link
                     href="#"
                     className="hover:text-black hover:translate-x-1 inline-block transition-all"
                   >
-                    Our Story
+                    La nostra storia
                   </Link>
                 </li>
                 <li>
@@ -157,7 +157,7 @@ export default function TipackFooter() {
                     href="#"
                     className="hover:text-black hover:translate-x-1 inline-block transition-all"
                   >
-                    Sustainability
+                    Sostenibilità
                   </Link>
                 </li>
                 <li>
@@ -165,7 +165,7 @@ export default function TipackFooter() {
                     href="#"
                     className="hover:text-black hover:translate-x-1 inline-block transition-all"
                   >
-                    Design Guide
+                    Guida al design
                   </Link>
                 </li>
                 <li>
@@ -181,7 +181,7 @@ export default function TipackFooter() {
 
             {/* Column 3 - Socials */}
             <div className="col-span-2 md:col-span-1">
-              <h3 className="font-black text-xl mb-6">Socials</h3>
+              <h3 className="font-black text-xl mb-6">Social</h3>
               <div className="flex gap-4">
                 <a
                   href="#"
@@ -208,9 +208,9 @@ export default function TipackFooter() {
 
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t-2 border-black/10 flex flex-col md:flex-row items-center justify-between gap-4 text-sm font-bold opacity-60">
-          <p>© 2026 Tipack Inc. All rights reserved.</p>
+          <p>© 2026 Tipack Inc. Tutti i diritti riservati.</p>
           <div className="flex items-center gap-1">
-            Made with <Heart size={14} fill="black" /> and too much coffee.
+            Fatto con <Heart size={14} fill="black" /> e troppo caffè.
           </div>
         </div>
       </div>

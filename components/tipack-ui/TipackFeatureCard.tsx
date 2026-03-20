@@ -5,13 +5,13 @@ interface TipackFeatureCardProps {
   title: string;
   description: string;
   variant?:
-    | "purple"
-    | "green"
-    | "yellow"
-    | "blue"
-    | "red"
-    | "orange"
-    | "default";
+  | "purple"
+  | "green"
+  | "yellow"
+  | "blue"
+  | "red"
+  | "orange"
+  | "default";
   icon?: React.ReactElement<{
     className?: string;
     strokeWidth?: number;
@@ -127,7 +127,7 @@ export default function TipackFeatureCard({
         {/* Action Area */}
         <div className="relative z-10 mt-auto">
           <button className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-[var(--color-text-main)] group/btn">
-            Learn more
+            Scopri di più
             <span className="bg-[var(--color-text-main)] text-white rounded-full p-1 transition-transform group-hover/btn:translate-x-1">
               <ArrowRight size={14} />
             </span>

@@ -19,55 +19,55 @@ import CelloTape from "@/components/CelloTape";
 const PRODUCTS = [
   {
     id: 1,
-    title: "Heavy Duty Corrugated Boxes",
+    title: "Scatole Ondulate Heavy Duty",
     image: "/images/big_box.webp",
     description:
-      "Built for endurance. Safely transport heavy and bulky items without breaking a sweat.",
+      "Costruite per salvaguardare. Trasporta oggetti pesanti e ingombranti senza preoccupazioni.",
     icon: Package,
     spec: "FIG-A // CORRUGATED",
   },
   {
     id: 2,
-    title: "Zip Lock Pouch",
+    title: "Busta Zip Lock",
     image: "/images/packet.webp",
     description:
-      "Perfect seal. Keep your contents fresh and secure with our premium zip pouches.",
+      "Chiusura perfetta. Mantieni il contenuto fresco e sicuro con le nostre buste premium.",
     icon: ShieldCheck,
     spec: "FIG-B // POUCH",
   },
   {
     id: 4,
-    title: "Food Packaging Boxes",
+    title: "Scatole per Alimenti",
     image: "/images/Food_box.webp",
     description:
-      "Food-safe and insulated. Maintain the quality and taste of your edibles.",
+      "Sicure per il cibo e isolanti. Mantieni qualità e gusto durante il trasporto.",
     icon: Leaf,
     spec: "FIG-D // FOOD-GRADE",
   },
   {
     id: 5,
-    title: "Layered Boxes",
+    title: "Scatole Stratificate",
     image: "/images/Layered_boxes.webp",
     description:
-      "Multi-level protection. Ideal for separating and securing delicate individual components.",
+      "Protezione multi-livello. Ideale per separare e proteggere componenti fragili.",
     icon: Package,
     spec: "FIG-E // LAYERED",
   },
   {
     id: 6,
-    title: "Heavy Duty Cube",
+    title: "Cubo Heavy Duty",
     image: "/images/heavy_duty_cube.webp",
     description:
-      "Maximum volume, maximum strength. Perfect for heavy square items.",
+      "Volumi massimi e forza massima. Perfetto per carichi quadrati pesanti.",
     icon: Package,
     spec: "FIG-F // CUBIC",
   },
   {
     id: 7,
-    title: "Wardrobe Box",
+    title: "Scatola Guardaroba",
     image: "/images/wardrobe_box.webp",
     description:
-      "Hang garments safely in transit. The ultimate moving solution for clothing.",
+      "Appendi gli indumenti in sicurezza. La soluzione definitiva per il trasloco.",
     icon: ShoppingBag,
     spec: "FIG-G // APPAREL",
   },
@@ -84,12 +84,10 @@ export default function TipackDemoPage() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-black font-heading tracking-tight mb-6 text-[var(--color-text-main)]">
-            The <span className="text-[var(--color-secondary)]">Tipack</span>{" "}
-            Features
+            Le <span className="text-[var(--color-secondary)]">Funzionalità</span> Tipack
           </h1>
           <p className="text-xl text-[var(--color-text-sub)]">
-            A collection of vibrant, playful, and conversion-focused packaging
-            for your brand.
+            Una collezione di packaging vivaci, efficaci e orientati alla conversione per il tuo marchio.
           </p>
         </div>
 
@@ -99,43 +97,43 @@ export default function TipackDemoPage() {
           <div className="max-w-5xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <TipackFeatureCard
-                title="Eco-Friendly Materials"
-                description="All our packaging is recyclable and compostable, helping your brand stay sustainable without compromising quality."
+                title="Materiali Ecologici"
+                description="Tutto il nostro packaging è riciclabile e compostabile, aiutando il tuo marchio a restare sostenibile senza rinunciare alla qualità."
                 variant="green"
                 icon={<Leaf className="w-8 h-8" />}
               />
 
               <TipackFeatureCard
-                title="Fast Turnaround"
-                description="With optimized production and logistics, your orders move quickly from checkout to delivery."
+                title="Consegne Veloci"
+                description="Con produzione e logistica ottimizzate, il tuo ordine arriva rapidamente dal checkout alla consegna."
                 variant="purple"
                 icon={<Zap className="w-8 h-8" />}
               />
 
               <TipackFeatureCard
-                title="Custom Packaging"
-                description="Tailored designs and sizes that perfectly match your product and brand identity."
+                title="Packaging Personalizzato"
+                description="Design e dimensioni su misura che si adattano perfettamente al tuo prodotto e all'identità del marchio."
                 variant="yellow"
                 icon={<Package className="w-8 h-8" />}
               />
 
               <TipackFeatureCard
-                title="Secure Protection"
-                description="Durable structures designed to keep your products safe during handling and transit."
+                title="Protezione Sicura"
+                description="Strutture resistenti create per mantenere i tuoi prodotti al sicuro durante la movimentazione e il trasporto."
                 variant="blue"
                 icon={<ShieldCheck className="w-8 h-8" />}
               />
 
               <TipackFeatureCard
-                title="Reliable Delivery"
-                description="Consistent shipping and tracking ensure your packaging arrives when you need it."
+                title="Consegna Affidabile"
+                description="Spedizioni e tracciabilità costanti garantiscono che il tuo packaging arrivi quando ne hai bisogno."
                 variant="red"
                 icon={<Truck className="w-8 h-8" />}
               />
 
               <TipackFeatureCard
-                title="Premium Finishes"
-                description="Enhance your unboxing experience with high-quality textures, coatings, and print effects."
+                title="Finiture Premium"
+                description="Migliora l'esperienza di unboxing con texture, rivestimenti ed effetti stampa di alta qualità."
                 variant="orange"
                 icon={<Palette className="w-8 h-8" />}
               />
@@ -165,12 +163,12 @@ export default function TipackDemoPage() {
               />
 
               <div className="bg-[#F4D03F] px-8 py-2 text-xl font-black uppercase border-y-2 border-black text-black">
-                Tale of the Tape
+                La storia del nastro
               </div>
             </div>
 
             <h2 className="text-5xl font-black uppercase tracking-tighter text-black">
-              Us <span className="text-gray-500">vs</span> Them
+              Noi <span className="text-gray-500">vs</span> Loro
             </h2>
           </div>
 
@@ -179,12 +177,12 @@ export default function TipackDemoPage() {
             {/* HEADERS */}
             <div className="grid grid-cols-12 border-b-2 border-black">
               <div className="col-span-4 p-5 bg-black text-white font-mono text-xs uppercase tracking-widest">
-                Parameter
+                Parametro
               </div>
 
               <div className="col-span-4 p-5 bg-[#F4D03F] text-center border-l-2 border-black relative">
                 <div className="absolute top-0 right-0 bg-black text-white text-[10px] px-2 py-1">
-                  WINNER
+                  VINCITORE
                 </div>
                 <h3 className="font-black text-2xl uppercase italic text-black">
                   Tipack
@@ -193,28 +191,24 @@ export default function TipackDemoPage() {
 
               <div className="col-span-4 p-5 bg-white text-center border-l-2 border-black">
                 <h3 className="font-bold text-2xl uppercase text-white line-through decoration-red-500">
-                  The Others
+                  Gli Altri
                 </h3>
               </div>
             </div>
 
             {/* ROWS */}
             {[
-              { feature: "Custom Branding", tipack: true, them: false },
-              {
-                feature: "Minimum Order Qty",
-                tipack: "50 Units",
-                them: "5000 Units",
-              },
-              { feature: "Lead Time", tipack: "3 Days", them: "3 Weeks" },
-              { feature: "Eco-certified", tipack: true, them: "Maybe?" },
+              { feature: "Brand personalizzato", tipack: true, them: false },
+              { feature: "Ordine minimo", tipack: "50 pezzi", them: "5000 pezzi" },
+              { feature: "Tempi di consegna", tipack: "3 giorni", them: "3 settimane" },
+              { feature: "Eco-certificato", tipack: true, them: "Forse?" },
             ].map((row, idx) => (
               <div
                 key={idx}
                 className="grid grid-cols-12 border-b-2 border-black last:border-b-0"
               >
                 <div className="col-span-4 p-5 bg-gray-50 border-r-2 border-black text-black font-bold uppercase">
-                  {row.feature}
+                  {row.feature === "Custom Branding" ? "Brand personalizzato" : row.feature === "Minimum Order Qty" ? "Ordine minimo" : row.feature === "Lead Time" ? "Tempi di consegna" : row.feature === "Eco-certified" ? "Eco-certificato" : row.feature}
                 </div>
 
                 <div className="col-span-4 p-5 flex justify-center items-center border-r-2 border-black bg-[#fffdf5] text-black">
@@ -243,7 +237,7 @@ export default function TipackDemoPage() {
 
             {/* FOOTER */}
             <div className="p-4 bg-black text-white text-center font-mono text-xs uppercase tracking-widest">
-              Verdict: Stop wasting money on cardboard that melts.
+              Verdetto: Smetti di sprecare soldi in cartone che si scioglie.
             </div>
           </div>
         </section>
@@ -270,13 +264,13 @@ export default function TipackDemoPage() {
               />
 
               <div className="bg-[#F4D03F] px-8 py-2 text-xl font-black uppercase tracking-tight shadow-[0px_4px_6px_rgba(0,0,0,0.1)] border-y-2 border-black text-black">
-                The Lineup
+                La Line-up
               </div>
             </div>
             <h2 className="text-5xl md:text-6xl font-black uppercase tracking-tighter text-black">
-              Standard{" "}
+              Edizione
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-black to-gray-600">
-                Issue
+                Standard
               </span>
             </h2>
           </div>
@@ -335,7 +329,7 @@ export default function TipackDemoPage() {
                     </p>
 
                     <button className="mt-auto w-full bg-black text-white py-3 font-bold uppercase tracking-widest flex items-center justify-center gap-2 group-hover:bg-[#F4D03F] group-hover:text-black transition-colors border-2 border-transparent group-hover:border-black">
-                      View Specs <ScanLine size={16} />
+                      Vedi specifiche <ScanLine size={16} />
                     </button>
                   </div>
                 </div>
@@ -350,19 +344,19 @@ export default function TipackDemoPage() {
         </section>
 
         <section className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">Testimonials</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">Testimonianze</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <TipackTestimonial
-              quote="I've never seen packaging this good. My customers post it on Instagram before they even open it!"
+              quote="Non ho mai visto imballaggi così belli. I clienti li taggano su Instagram prima ancora di aprirli!"
               name="Sarah Jenkins"
-              role="Founder"
+              role="Fondatrice"
               company="Glow Cosmetics"
               avatar="https://randomuser.me/api/portraits/women/44.jpg"
             />
             <TipackTestimonial
-              quote="Tipack saved our launch. The speed and quality are unmatched in the industry."
+              quote="Tipack ha salvato il nostro lancio. Velocità e qualità sono imbattibili nel settore."
               name="Mike Ross"
-              role="Operations"
+              role="Operazioni"
               company="TechGear"
               avatar="https://randomuser.me/api/portraits/men/32.jpg"
             />
