@@ -19,6 +19,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Tipack Packaging",
   description: "Packaging Site",
+  icons: {
+    icon: "/box.png",
+  }
 };
 
 export default function RootLayout({
